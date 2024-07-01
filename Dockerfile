@@ -27,11 +27,5 @@ ENV PATH="/usr/local/bin:$PATH"
 # Create the server directory
 RUN mkdir -p /mnt/server/resources
 
-# Copy the installation script into the container
-COPY entrypoint.sh /entrypoint.sh
-
-# Make the entrypoint script executable
-RUN chmod +x /entrypoint.sh
-
 # Set the working directory
 WORKDIR /mnt/server
